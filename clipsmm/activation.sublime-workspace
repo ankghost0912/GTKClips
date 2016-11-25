@@ -1,0 +1,478 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"vec",
+				"vec_sz"
+			],
+			[
+				"un",
+				"unistd.h	(back_substitution.c)"
+			],
+			[
+				"back",
+				"back_substitution"
+			],
+			[
+				"vc",
+				"vec_sz"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"fp",
+				"fp_u"
+			],
+			[
+				"sw",
+				"switch	(genmat.c)"
+			],
+			[
+				"op",
+				"optarg	(genmat.c)"
+			],
+			[
+				"std",
+				"stdlib.h	(gepar.c)"
+			],
+			[
+				"pivot",
+				"pivot_index"
+			],
+			[
+				"k",
+				"k_loc"
+			],
+			[
+				"pi",
+				"pivot_index"
+			],
+			[
+				"max",
+				"max_index"
+			],
+			[
+				"do",
+				"double"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"mat",
+				"mat_sz"
+			],
+			[
+				"loc",
+				"loc_A"
+			],
+			[
+				"ar",
+				"arr"
+			],
+			[
+				"sie",
+				"sizeof"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"ret",
+				"return_rand"
+			],
+			[
+				"inc",
+				"inc	#include <…>"
+			],
+			[
+				"re",
+				"rec_rank"
+			],
+			[
+				"rec",
+				"rec_rank"
+			],
+			[
+				"s",
+				"size"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"int",
+				"integer_power"
+			],
+			[
+				"reu",
+				"result"
+			],
+			[
+				"MP",
+				"MPI_SOURCE	(bbounce.c)"
+			],
+			[
+				"print",
+				"printf	printf …"
+			],
+			[
+				"p",
+				"psum"
+			],
+			[
+				"nxt",
+				"nxt_rank"
+			],
+			[
+				"log",
+				"log_2"
+			],
+			[
+				"T",
+				"TEST_FILE"
+			],
+			[
+				"ring",
+				"ring_process"
+			],
+			[
+				"l",
+				"l_rank"
+			],
+			[
+				"MPI_",
+				"MPI_INT"
+			],
+			[
+				"r_",
+				"r_rank"
+			],
+			[
+				"r",
+				"r_val"
+			],
+			[
+				"my",
+				"myNum"
+			],
+			[
+				"MPI",
+				"MPI_INT	(bbounce.c)"
+			],
+			[
+				"l_",
+				"l_val"
+			],
+			[
+				"MPI_S",
+				"MPI_Status	(bbounce.c)"
+			],
+			[
+				"roo",
+				"root_rank"
+			],
+			[
+				"MPI_I",
+				"MPI_INT	(bbounce.c)"
+			],
+			[
+				"MPI_Comm",
+				"MPI_Comm_size	(bbounce.c)"
+			],
+			[
+				"MPI_C",
+				"MPI_COMM_WORLD	(bbounce.c)"
+			],
+			[
+				"MPI_CO",
+				"MPI_Comm_rank	(bbounce.c)"
+			],
+			[
+				"in",
+				"inc	#include <…>"
+			],
+			[
+				"ball",
+				"ball_val"
+			],
+			[
+				"ba",
+				"ball_val"
+			],
+			[
+				"m",
+				"my_id"
+			],
+			[
+				"MPIC",
+				"MPI_COMM_WORLD	(bbounce.c)"
+			],
+			[
+				"st",
+				"stdio.h	(bbounce.c)"
+			],
+			[
+				"nr",
+				"nxtrandom"
+			],
+			[
+				"de",
+				"delta"
+			],
+			[
+				"MPI_O",
+				"MPI_COMM_WORLD"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"arg",
+				"argc"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 132.0,
+		"last_filter": "REmo",
+		"selected_items":
+		[
+			[
+				"REmo",
+				"Package Control: Remove Package"
+			],
+			[
+				"List",
+				"Package Control: List Packages"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Yc",
+				"Ycmd: Create HMAC keys"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 539.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/akulshr/GaussianElimination/cyclic_driver.c",
+		"/home/akulshr/GaussianElimination/gepar.c",
+		"/home/akulshr/Downloads/CLIPS/clips.h",
+		"/home/akulshr/Downloads/CLIPS/constrct.h",
+		"/home/akulshr/GaussianElimination/veccomp.c",
+		"/home/akulshr/GaussianElimination/back_substitution.c",
+		"/home/akulshr/GaussianElimination/geseq.c",
+		"/home/akulshr/GaussianElimination/genmat.c",
+		"/home/akulshr/OpenMPI_programs/bbounce.c",
+		"/home/akulshr/takehome2/ring_process.c",
+		"/home/akulshr/OpenMPI_programs/floyd.c",
+		"/home/akulshr/OpenMPI_programs/make_graph.c",
+		"/home/akulshr/OpenMPI_programs/read_graph.c",
+		"/home/akulshr/practice_codes/unique_solution.cpp",
+		"/home/akulshr/cleanup_old_files.py",
+		"/home/akulshr/Reddit_bot/redditbot.py",
+		"/home/akulshr/takehome2/makefile",
+		"/home/akulshr/takehome2/log_tst.c",
+		"/home/akulshr/hw01_kulshrestha_ankit/hw01_kulshrestha_ankit.pbs",
+		"/home/akulshr/bit_test.cpp",
+		"/home/akulshr/takehome2/nring.c",
+		"/home/akulshr/.config/sublime-text-3/Packages/User/ClangAutoComplete.sublime-settings",
+		"/home/akulshr/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/akulshr/OpenMPI_programs/truebounce.c",
+		"/home/akulshr/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/akulshr/Buffer_overflow/stack_view.c",
+		"/home/akulshr/MPI_C++/intro.cpp",
+		"/home/akulshr/.config/sublime-text-3/Packages/User/YcmdCompletion.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"i",
+			"pow(2,k)",
+			"int k",
+			"}\n",
+			"B.p",
+			"B.v",
+			"struct"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"k",
+			"integer_power(2,k)",
+			"ball_pres",
+			"ball_val"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "activation.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
