@@ -34,7 +34,7 @@ class GtkClips
  // TODO: add fact functions
   void GetFactList(void *, void *); // Get fact list.
 
-  // rule functions
+  // TODO: add rule functions
   std::string GetRuleModule(void *);
   std::string GetRulePPForm(void *rulePtr) {return returnPPString(ptr, EnvGetRulePPForm);}
 
@@ -46,12 +46,13 @@ class GtkClips
   void GetAgenda(void*, void *, void *); // Get the agenda of the current module.
   std::string GetActivationName(void *actPtr) {return EnvGetActivationName(theEnv, actPtr);}
   bool CheckAgendaChanged() {return EnvGetAgendaChanged(theEnv);}
-
   void SetEnvSalienceEval(std::string);
   std::string GetEnvSalienceEval();
 
-  void SetStrategy(std::string);
-  std::string GetStrategy();
+  void SetStrategy(Glib::ustring);
+  Glib::ustring GetStrategy();
+
+  void ReorderAgenda(void *); // reorder agenda based on CR strategy. TBD where to fit.
 
   void Run(); // run function. 
 
@@ -61,7 +62,7 @@ class GtkClips
    int maxActivations;
    std::string returnPPString(void *, void (*)(void *, char*, unsigned, void*)); 
    std::string returnPPString(void*, void(*)(void *, void *));
-   std::vector<void *> returnList(void(*)(void *, void *));
+   std::vector<void *> returnList(void* (*)(void *, void *));
    void ActivationCallback(void *); // callback to the function which will be run on each rule fire.
 
 

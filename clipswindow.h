@@ -7,7 +7,7 @@ class ClipsWindow : public Gtk::Window
 {
 public:
 	ClipsWindow(BaseObjectType * cobject, const Glib::RefPtr<Gtk::Builder> &refGlade);
-	~ClipsWindow();
+	virtual ~ClipsWindow();
 
 
 protected:
@@ -19,25 +19,17 @@ protected:
     Gtk::Button *fact_btn;
     Gtk::Button *run_btn;
     Gtk::Button *reset_btn;
-    // Menu options.
-    //Gtk::MenuButton *options; // Get the options menu
-    Gtk::MenuItem *load_item; // Menu items for the "Options menu"
-    Gtk::MenuItem *save_item;
-    Gtk::MenuItem *change_strategy_item;
-    //Gtk::MenuButton *help;
-    Gtk::MenuItem *about_item; // Menu item for the "Help Menu"
+    Gtk::Button *load_file_btn;
+    Gtk::Button *strategy_btn;
+   
 
     // signal handlers for buttons. 
 	void on_agendabtn_clicked();
 	void on_factbtn_clicked();
 	void on_runbtn_clicked();
 	void on_resetbtn_clicked();
-
-	// signal handlers for menu items.
-	void on_load_activate();
-	void on_StrategyOption_activate();
-	void on_SaveOption_activate();
-	void AboutItem_activate_cb(); 
+    void on_LoadFileBtn_clicked();
+    void on_StrategyBtn_clicked();
 };
 
 

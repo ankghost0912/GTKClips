@@ -9,6 +9,6 @@ main_app.o: main_app.cpp clipswindow.h
 	$(CC)  main_app.cpp -o main.o `$(GTK_COMPILE_FLAGS)`
 
 clipswindow.o: clipswindow.cpp clipswindow.h
-	$(CC)  clipswindow.cpp  -o main.o`$(GTK_COMPILE_FLAGS)`
+	$(CC)  clipswindow.cpp  `$(GTK_COMPILE_FLAGS)`
 
 

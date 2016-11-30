@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
 	Gtk::Main kit(argc,argv);
 	//auto app = Gtk::Application::create(argc, argv, "clipsgui.clemson.edu");
-  Glib::RefPtr<Gtk::Builder> builder = Gtk::Builder::create_from_file("clipswindow.glade");
+    Glib::RefPtr<Gtk::Builder> builder = Gtk::Builder::create_from_file("clipswindow.glade");
 
 
 	
