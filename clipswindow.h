@@ -21,15 +21,16 @@ protected:
     Gtk::Button *reset_btn;
     Gtk::Button *load_file_btn;
     Gtk::Button *strategy_btn;
-   
-
-    // signal handlers for buttons. 
+    Gtk::TextView *display;
+   // signal handlers for buttons. 
 	void on_agendabtn_clicked();
 	void on_factbtn_clicked();
 	void on_runbtn_clicked();
 	void on_resetbtn_clicked();
     void on_LoadFileBtn_clicked();
     void on_StrategyBtn_clicked();
+
+
 };
 
 

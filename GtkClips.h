@@ -1,5 +1,6 @@
 #include "clips.h"
 #include <string>
+#include <vector>
 
 
 
@@ -10,6 +11,9 @@ class GtkClips
 	GtkClips();
 	~GtkClips();
 
+  void SetMaxActivations() {maxActivations = 1000;}
+  int GetMaxActications() {return maxActivations;}
+
   //Environment functions 
   void ClearEnv() {return EnvClear(theEnv);} // clear the environment.
   bool CheckDynamicConstraintchecking() {return EnvGetDynamicConstraintChecking(theEnv);}
@@ -17,13 +21,13 @@ class GtkClips
 
 
   // load function
-  void Load(const char *); // pass the environment and the filename to be loaded.
+  void GtkLoad(void*, const char *); // pass the environment and the filename to be loaded.
   
   // reset function
-  void Reset() {return EnvReset(theEnv);}
+  void GtkReset() {return EnvReset(theEnv);}
 
   // save function
-  void Save(const char *);
+  void GtkSave(void *, const char *);
 
 
 // debugging functions 
@@ -34,23 +38,23 @@ class GtkClips
  // TODO: add fact functions
   void GetFactList(void *, void *); // Get fact list.
 
-  // TODO: add rule functions
-  std::string GetRuleModule(void *);
-  std::string GetRulePPForm(void *rulePtr) {return returnPPString(ptr, EnvGetRulePPForm);}
+  // // TODO: add rule functions
+  // std::string GetRuleModule(void *);
+  // std::string GetRulePPForm(void *rulePtr) {return returnPPString(rulePtr, EnvGetRulePPForm);}
 
 
   //agenda
-  void getActivationName(void *ptr) { return EnvGetActivationName(theEnv, ptr);}
+  std::string getActivationName(void *ptr) { return EnvGetActivationName(theEnv, ptr);}
   std::string activationPPForm(void *ptr) {return returnPPString(ptr, EnvGetActivationPPForm);}
   std::vector<void *> getActivationList() {return returnList(EnvGetNextActivation);}
-  void GetAgenda(void*, void *, void *); // Get the agenda of the current module.
+  void GetAgenda(void*, char *, void *); // Get the agenda of the current module.
   std::string GetActivationName(void *actPtr) {return EnvGetActivationName(theEnv, actPtr);}
   bool CheckAgendaChanged() {return EnvGetAgendaChanged(theEnv);}
   void SetEnvSalienceEval(std::string);
   std::string GetEnvSalienceEval();
 
-  void SetStrategy(Glib::ustring);
-  Glib::ustring GetStrategy();
+  void SetStrategy(std::string);
+  std::string GetStrategy();
 
   void ReorderAgenda(void *); // reorder agenda based on CR strategy. TBD where to fit.
 
@@ -60,13 +64,9 @@ class GtkClips
   private: 
    void *theEnv; 
    int maxActivations;
-   std::string returnPPString(void *, void (*)(void *, char*, unsigned, void*)); 
-   std::string returnPPString(void*, void(*)(void *, void *));
+   std::string returnPPString(void *, void (*)(void *, char*, size_t, void*)); 
+   
    std::vector<void *> returnList(void* (*)(void *, void *));
-   void ActivationCallback(void *); // callback to the function which will be run on each rule fire.
-
-
-
-
+   //void ActivationCallback(void *); // callback to the function which will be run on each rule fire.
 	
 };

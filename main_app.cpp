@@ -8,9 +8,6 @@ int main(int argc, char *argv[])
 	Gtk::Main kit(argc,argv);
 	//auto app = Gtk::Application::create(argc, argv, "clipsgui.clemson.edu");
     Glib::RefPtr<Gtk::Builder> builder = Gtk::Builder::create_from_file("clipswindow.glade");
-
-
-	
 	ClipsWindow *cw = 0;
 	builder->get_widget_derived("main_window", cw);
     kit.run(*cw);
